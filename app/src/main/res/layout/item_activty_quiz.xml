@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_opt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:background="@drawable/normal_background"
+        android:paddingVertical="@dimen/_3sdp">
+
+        <!--<ImageView-->
+        <!--android:layout_width="@dimen/_15sdp"-->
+        <!--android:layout_height="@dimen/_15sdp"-->
+        <!--android:layout_margin="@dimen/_10sdp"-->
+        <!--android:src="@drawable/alpha_a"-->
+        <!--android:tint="@color/view_color" />-->
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_opt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:text="FEMA"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

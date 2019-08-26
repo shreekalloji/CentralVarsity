@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+
+                android:src="@drawable/ic_back_arrow" />
+            <!-- <android.support.v7.widget.AppCompatTextView
+                 style="@style/custom_textview_regular"
+                 android:padding="@dimen/_8sdp"
+                 android:text="@string/ques_straight"
+                 android:gravity="center_vertical"
+                 android:textColor="@color/white" />-->
+            <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                android:id="@+id/tv_exam_title"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="@string/ques_straight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_clock" />
+
+            <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                android:id="@+id/tv_countdown"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight="0.18"
+                android:gravity="center_vertical"
+                android:text="05:40"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_quizquestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false" />
+
+            <ProgressBar
+                android:id="@+id/main_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/bg_storke">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_discuss"
+
+                            android:paddingVertical="@dimen/_3sdp" />
+
+                        <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:text="Discuss"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/bg_storke">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_previous_arrow" />
+
+                        <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                            android:id="@+id/tv_prev"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:gravity="center"
+
+                            android:paddingRight="@dimen/_4sdp"
+                            android:text="Prev"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/bg_storke">
+
+                    <LinearLayout
+                        android:id="@+id/ll_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center">
+
+
+                        <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                            android:id="@+id/tv_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="top"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:text="Next"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:background="@drawable/ic_next_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

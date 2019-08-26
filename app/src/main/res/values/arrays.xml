@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="education">
+        <item> -Select Education- </item>
+        <item>HighSchool</item>
+        <item>Intermediate(11th or 12th)</item>
+        <item>Engineering</item>
+        <item>Medicine</item>
+        <item>Architecture</item>
+
+    </string-array>
+    <string-array name="topic">
+        <item>Select Topic</item>
+        <item>HighSchool</item>
+        <item>Intermediate(11th or 12th)</item>
+        <item>Engineering</item>
+        <item>Medicine</item>
+        <item>Architecture</item>
+
+    </string-array>
+</resources>

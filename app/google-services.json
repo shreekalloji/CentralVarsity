@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "892089287269",
+    "firebase_url": "https://student-varsity.firebaseio.com",
+    "project_id": "student-varsity",
+    "storage_bucket": "student-varsity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892089287269:android:5c46fd36cc8ef79f",
+        "android_client_info": {
+          "package_name": "com.iprismtech.studentvarsity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892089287269-01pkk07s12elaqup77aef0c4ure4trl2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iprismtech.studentvarsity",
+            "certificate_hash": "032256bc909361a05591c92642e01828e09787db"
+          }
+        },
+        {
+          "client_id": "892089287269-ilaodg8f0ci7om68c7ofj0ilk5e8dkdt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc3oNdV3d-VHKXeJyJIKaA-LGCSfubixc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892089287269-ilaodg8f0ci7om68c7ofj0ilk5e8dkdt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

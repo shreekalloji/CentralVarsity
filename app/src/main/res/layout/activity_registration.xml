@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.RegistrationActivity">
+
+    <android.support.v4.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/custom_textview_regular"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/regis"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/custom_textview_regular"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/lorem"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@drawable/suggestion_background">
+
+                    <Spinner
+                        android:id="@+id/spinnerEducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@null"
+                        android:entries="@array/education"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:id="@+id/im_arrow"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:src="@drawable/ic_red_down_arrow" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/custom_textview_bold"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="Select Stream ?"
+                android:textColor="@color/black" />
+
+            <GridView
+                android:id="@+id/gridview_Stream"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="auto_fit"
+                android:visibility="gone">
+
+            </GridView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_stream"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+
+                >
+
+                <!--item-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/bg_storke"
+                            android:gravity="center"
+                            android:text="computer science(CSE)"
+                            android:textColor="@color/black"
+
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/bg_storke"
+                            android:gravity="center"
+                            android:text="Mechanical(MECH)"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/bg_storke"
+                            android:gravity="center"
+                            android:text="Electronics &amp; communications(ECE)"
+                            android:textColor="@color/black"
+
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/courseyeartext_background"
+                            android:backgroundTint="#6495ed"
+                            android:gravity="center"
+                            android:text="civil"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/bg_storke"
+                            android:gravity="center"
+                            android:text="computer science(CSE)"
+                            android:textColor="@color/black"
+
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/bg_storke"
+                            android:gravity="center"
+                            android:text="Mechanical(MECH)"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--item-->
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/custom_textview_bold"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:text="Course Year \? "
+                    android:textColor="@color/black" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/custom_textview_regular"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/courseyear"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp" />
+
+                <!--item-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="4">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1st"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/courseyeartext_background"
+                        android:gravity="center"
+                        android:text="2nd"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/courseyeartext_background"
+                        android:gravity="center"
+                        android:text="3rd"
+
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="4th"
+                        android:textAlignment="center" />
+
+
+                </LinearLayout>
+                <!--item-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/im_fab"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/_10sdp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/ic_arrow_right"
+
+        />
+
+</RelativeLayout>

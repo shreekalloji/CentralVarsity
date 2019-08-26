@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iprismtech.studentvarsity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        >
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity
+            android:name=".ui.activity.NotesDetailsDescriptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ui.activity.ImageCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.MCQsQuestionDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ConnectMyFriendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ConnectFriendRequestSentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ConnectFriendRequestsActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Main2Activity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.activity.FaqDetailActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.VideoDetailActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Createpost"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ViewProfileActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.Viewcontent"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.ConnectUniversityFrds"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.activity.Subject"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.PingGroupsActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.NewGroupActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.GroupActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.AboutUsActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.ContactActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.QuestionActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".activities.SuggestionDetailsActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.PingFriendsGroup"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.FirstScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name=".ui.activity.SignUpActivity"
+            android:configChanges="screenSize|locale"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.activity.OTPActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.FinalRegistrationActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.ProfileActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.activity.ConnectFriendsActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.RegistrationActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.ProfileEdit"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.Changesubject"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.Ping"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.SelectNewSubject"
+            android:configChanges="keyboardHidden|screenSize|locale"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <!--<activity-->
+        <!--android:name=".ui.activity.Subject"-->
+        <!--android:configChanges="keyboardHidden|screenSize|locale"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustPan" />-->
+        <activity
+            android:name=".ui.activity.GroupDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.AddPartcipantsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.PingToFriendsGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ActivityDetailsActvity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.activity.ViewProfile_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.OverviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.QuestionRightWrongActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.SuggestionDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+        <activity
+            android:name=".ui.activity.NotesActivty"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.McqActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.QuizActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.FaqActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.ChaptersVideoList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.DiscussActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".fcm.MyFirebaseInstanceIDService"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="dreamgo.corp.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+
+        <!--<meta-data-->
+        <!--android:name="com.google.android.gms.version"-->
+        <!--android:value="@integer/google_play_services_version" />-->
+
+        <receiver
+            android:name=".utils.RequestService"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+                <action android:name="com.volive.calltrack.alarms.ACTION_LOC_ALARM" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

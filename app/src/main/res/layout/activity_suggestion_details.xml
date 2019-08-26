@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/suggestion_bg"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SuggestionDetailsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/im_close"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="1dp"
+                    android:padding="@dimen/_6sdp"
+                    android:src="@drawable/ic_red_close" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="@dimen/_40sdp"
+                android:fontFamily="@font/engebrechtre_ex"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Suggestion type"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/suggestion_background">
+
+                <Spinner
+                    android:id="@+id/spinner_s_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@null"
+                    android:entries="@array/topic"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:src="@drawable/ic_red_down_arrow" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/engebrechtre_ex"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="-What kind of exam if applicable"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_15sdp"
+
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/suggestion_background">
+
+                <Spinner
+                    android:id="@+id/spinner_exam_kind"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@null"
+                    android:entries="@array/topic"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:src="@drawable/ic_red_down_arrow" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/engebrechtre_ex"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="--Exam/subject name if applicable"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/suggestion_background">
+
+                <Spinner
+                    android:id="@+id/spinner_exam_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@null"
+                    android:entries="@array/topic"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:src="@drawable/ic_red_down_arrow" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/engebrechtre_ex"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="-Your confidence to fair in exam"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/suggestion_background">
+
+                <Spinner
+                    android:id="@+id/spinner_exam_confidence"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@null"
+                    android:entries="@array/topic"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:src="@drawable/ic_red_down_arrow" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/engebrechtre_ex"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="-Which country you want to study"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/suggestion_background">
+
+                <Spinner
+                    android:id="@+id/spinner_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@null"
+                    android:entries="@array/topic"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:src="@drawable/ic_red_down_arrow" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/engebrechtre_ex"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="-Any thing else you want to say"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+
+            <com.iprismtech.studentvarsity.customviews.CustomEditTextNormal
+                android:id="@+id/et_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@drawable/suggestion_background"
+                android:hint="write here"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp">
+
+            </View>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <Button
+            android:id="@+id/btn_sugestion_submit"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/suggestion_button_bg"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+</RelativeLayout>

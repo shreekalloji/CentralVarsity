@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.OTPActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/custom_textview_bold"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="OTP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/custom_textview_regular"
+        android:layout_margin="@dimen/_2sdp"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="@string/otp_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <!--<com.alimuzaffar.lib.pin.PinEntryEditText-->
+    <!--android:id="@+id/otp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:cursorVisible="false"-->
+    <!--android:digits="1234567890"-->
+    <!--android:inputType="number"-->
+    <!--android:maxLength="6"-->
+    <!--android:layout_margin="@dimen/_20sdp"-->
+    <!--android:textIsSelectable="false"-->
+    <!--android:textSize="20sp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/otp_code" />
+
+        <com.iprismtech.studentvarsity.utils.EditTextOtp
+            android:id="@+id/etOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+
+            android:gravity="end" />
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="end"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/merchantPasscode1"-->
+        <!--android:layout_width="@dimen/_25sdp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:backgroundTint="#AAAAAA"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="1"-->
+        <!--android:padding="10dp"-->
+        <!--android:text=""-->
+        <!--android:textColor="#000" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/merchantPasscode2"-->
+        <!--android:layout_width="@dimen/_25sdp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:backgroundTint="#AAAAAA"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="1"-->
+        <!--android:padding="10dp"-->
+        <!--android:text=""-->
+        <!--android:textColor="#000" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/merchantPasscode3"-->
+        <!--android:layout_width="@dimen/_25sdp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:backgroundTint="#AAAAAA"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="1"-->
+        <!--android:padding="10dp"-->
+        <!--android:text=""-->
+        <!--android:textColor="#000" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/merchantPasscode4"-->
+        <!--android:layout_width="@dimen/_25sdp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:backgroundTint="#AAAAAA"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="1"-->
+        <!--android:padding="10dp"-->
+        <!--android:text=""-->
+        <!--android:textColor="#000" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/merchantPasscode5"-->
+        <!--android:layout_width="@dimen/_25sdp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:backgroundTint="#AAAAAA"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="1"-->
+        <!--android:padding="10dp"-->
+        <!--android:text=""-->
+        <!--android:textColor="#000" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/merchantPasscode6"-->
+        <!--android:layout_width="@dimen/_25sdp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:backgroundTint="#AAAAAA"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="1"-->
+        <!--android:padding="10dp"-->
+        <!--android:text=""-->
+        <!--android:textColor="#000" />-->
+
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtVerify"
+        style="@style/custom_textview_bold"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/semi_black_background"
+        android:padding="@dimen/_8sdp"
+        android:text="Verify"
+        android:textColor="@color/white" />
+
+    <!--&lt;!&ndash;<android.support.v7.widget.AppCompatTextView&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/custom_textview_bold"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Resend OTP"&ndash;&gt;-->
+    <!--android:textColor="@color/light_black" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_recode"
+            android:textColor="@color/light_black" />
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:text="00 " />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_otp_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text=""
+        android:textColor="@color/black" />
+</LinearLayout>

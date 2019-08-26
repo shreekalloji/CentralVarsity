@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_storke"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/custom_textview_regular"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/removeMes"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:background="@color/view_color"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="horizontal">
+
+
+            <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                android:id="@+id/remove_grup_yes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Yes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:background="@color/view_color"></View>
+
+            <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                android:id="@+id/tv_no"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="No"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

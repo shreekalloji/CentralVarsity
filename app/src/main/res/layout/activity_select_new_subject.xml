@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.Subject">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_back_arrow"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:tint="@color/white"/>
+
+
+                <TextView
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_90sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="Subjects"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/custom_textview_regular"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/subject"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="search"
+                android:textColor="#FFFFFF"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:background="@drawable/red_corner_draw"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Semester - 1"
+                android:textColor="#000000"
+                android:textSize="@dimen/_14sdp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view_color"></View>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Select  All"
+                android:textColor="#000000"
+                android:textSize="@dimen/_14sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+            </android.support.v7.widget.RecyclerView>
+
+            <!--item-->
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+            </android.support.v7.widget.RecyclerView>
+
+            <!--Itemlayout-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="calucatons and differential equations"
+
+                    />
+
+                <ToggleButton
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/check_box_toggle"
+                    android:layout_margin="10dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Chemistry"
+
+                    />
+
+                <ToggleButton
+
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/check_box_toggle"
+                    android:layout_margin="10dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Physics"
+
+                    />
+
+                <ToggleButton
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/check_box_toggle"
+                    android:layout_margin="10dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Environment Studies"
+
+                    />
+
+                <ToggleButton
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/check_box_toggle"
+                    android:layout_margin="10dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Computer Programming"
+
+                    />
+
+                <ToggleButton
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/check_box_toggle"
+                    android:layout_margin="10dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Engineering Graphics"
+
+                    />
+
+                <ToggleButton
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/check_box_toggle"
+                    android:layout_margin="10dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="It tools and Cyber Security"
+
+                    />
+
+                <ToggleButton
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/check_box_toggle"
+                    android:layout_margin="10dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/_150sdp"
+                    android:layout_weight="0.2"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--itemlayout-->
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_gravity="bottom|right"
+            app:fabSize="normal"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            app:layout_anchorGravity="bottom|end"
+            app:useCompatPadding="true"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/fab_subject"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_arrow_right"
+        android:backgroundTint="@color/black"
+        android:layout_margin="@dimen/_10sdp"
+
+        />
+
+
+
+
+
+</RelativeLayout>

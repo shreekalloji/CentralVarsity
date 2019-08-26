@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="3dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text="•"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:text="SUGGESTION TYPE"
+                    android:textSize="@dimen/_12sdp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text=":"
+                    android:textSize="@dimen/_10sdp"></TextView>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                    android:id="@+id/tv_st"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:text="l am looking for a good college and hostel also"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text="•"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:text="What kind of exam if applicable"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12sdp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text=":"
+                    android:textSize="@dimen/_10sdp"></TextView>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:id="@+id/tv_wk"
+                    android:text="l am looking for a good college and hostel also"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text="•"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:text="Exam/subject name if applicable"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12sdp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text=":"
+                    android:textSize="@dimen/_10sdp"></TextView>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:id="@+id/tv_examname"
+                    android:text="l am looking for a good college and hostel also"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text="•"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:text="Your confidence to fair in exam"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12sdp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text=":"
+                    android:textSize="@dimen/_10sdp"></TextView>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:id="@+id/tv_confidence"
+                    android:text="l am looking for a good college and hostel also"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text="•"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:text="Which country you want to study"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12sdp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text=":"
+                    android:textSize="@dimen/_10sdp"></TextView>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:id="@+id/tv_country"
+                    android:text="l am looking for a good college and hostel also"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text="•"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:text="Any thing else you want to say"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12sdp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_weight="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:text=":"
+                    android:textSize="@dimen/_10sdp"></TextView>
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:id="@+id/tv_desc"
+                    android:text="l am looking for a good college and hostel also"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

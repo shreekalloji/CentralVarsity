@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/colorPrimary"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_back_arrow"
+                    android:layout_gravity="center"
+                    />
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_weight="0.6"
+                    android:text="@string/ques_straight"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    />-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_corner_draw">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_search_black_24dp"
+                        android:tint="#947575"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Search People"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_10sdp"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_wifi_tethering_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_red"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="@dimen/_40sdp"
+                    android:gravity="center"
+                    android:text="Friends"
+                    android:textColor="@color/black"
+                    android:background="@drawable/login_txt_bg"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="@dimen/_40sdp"
+                    android:gravity="center"
+                    android:text="Group"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_gravity=""/>
+            </LinearLayout>
+
+            <!--Item for Wrong Attempt-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_red"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="@dimen/_40sdp"
+                    android:gravity="center"
+                    android:text="Friends"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="@dimen/_40sdp"
+                    android:gravity="center"
+                    android:text="Group"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:background="@drawable/login_txt_bg"
+                    android:layout_gravity=""/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="Create New Group"
+            android:textSize="@dimen/_18sdp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"></LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </LinearLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/_160sdp"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:padding="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_25sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ping"
+            android:textColor="@color/white"
+            android:background="@drawable/semi_black_background"
+            android:textSize="@dimen/_22sdp" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

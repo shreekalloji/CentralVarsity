@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_subject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical"
+            android:text="calucatons and differential equations"
+            android:textSize="@dimen/_12sdp" />
+
+        <ToggleButton
+        android:id="@+id/ch_sub"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/check_box_toggle"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textOff=""
+        android:textOn="" />
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/_20sdp"-->
+            <!--android:layout_height="@dimen/_20sdp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/ch_sub"-->
+            <!--android:background="@drawable/ic_uncheck_box" />-->
+    </LinearLayout>
+
+</LinearLayout>

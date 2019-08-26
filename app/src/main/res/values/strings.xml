@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">CentralVarcity</string>
+    <string name="courseyear">You can select multiple years if preparing for competitve exams select all years.You can always modify from your profile</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry</string>
+    <string name="friendtopic">Friends who are discussing this topic</string>
+    <string name="regis">Registration</string>
+    <string name="suggestion_information">Lorem ipsum is simpple dummy text of the printing and typesetting industry</string>
+    <string name="ques_straight">Motion in a Straight Line</string>
+    <string name="questioninfo">Which of the following is the body/agency set up by Government of india to increase the flow of foreign investment in the country ?</string>
+    <string name="marks">You got 32 marks \n out of 50</string>
+    <string name="warningMes">Its a warning for you, \n Are you sure to change subject ?</string>
+    <string name="saveMes">Save Changes ?</string>
+    <string name="feddbackMain">SEND US YOUR FEEDBACK !</string>
+    <string name="mes">Lorem ipsum is simply dummy text of the \n printing and typesetting industry.</string>
+    <string name="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever</string>
+    <string name="removeMes">Remove From group ?</string>
+    <string name="subject">Select subjects,related content will be updated.You can always comeback to modify your options.</string>
+    <string name="conectfrds">Connect with Friends</string>
+    <string name="viewcontent">Lopusum ipsum is simply dummy text of the printing and typesetting.Loreum ipsum is</string>
+    <string name="viewall">View All</string>
+    <string name="FQ"><![CDATA[All Q & A]]></string>
+    <string name="error_player"><![CDATA[<string name=\"error_player\">There was an error initializing the YouTubePlayer (%1$s)</string>]]></string>
+    <string name="pleasewait">please wait..</string>
+    <string name="ok_txt">ok</string>
+    <string name="cancel_txt">cancel</string>
+    <string name="no_internet_txt1">No Internet</string>
+    <string name="no_internet_txt">no internet connection</string>
+    <string name="timeOutTxt">Time out</string>
+    <string name="serverError">Server Error</string>
+    <string name="unknownErrorMsg">Unknown error message</string>
+
+    <string name="refer">Refer &amp; Earn</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="loading">Loading....</string>
+    <string name="takephoto">Take Photo</string>
+    <string name="choosefrmgallery">Choose from Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="addphoto">Add Photo!</string>
+    <string name="default_notification_channel_id" translatable="false">channel</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="gps_is_settings">GPS is settings</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="gps_is_not_enabled_do_you_want_to_go_to_settings_menu">GPS is not enabled. Do you want to go to settings menu?</string>
+
+    <string name="settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="please_enter_your_phone_number">please enter your phone number</string>
+    <string name="Please_enter_otp">Please enter OTP which is sent to your mobile number</string>
+    <string name="please_check_your_network_connection">Please check your network connection!</string>
+
+    <string name="Do_you_want_to_delete">Do you want to Delete?</string>
+    <string name="delete">Delete</string>
+
+    <string name="contacts_access_needed">Contacts access needed</string>
+    <string name="please_confirm_contacts_access">please confirm Contacts access</string>
+    <string name="ok">Ok</string>
+
+    <string name="no_permission_for_contacts">No permission for contacts</string>
+
+    <string name="otp_text">We have sent you an SMS with a OTP Code to you number for verification.</string>
+    <string name="otp_code">Code</string>
+    <string name="otp_recode">Resend Code</string>
+</resources>

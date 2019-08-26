@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_30sdp"
+    android:layout_marginVertical="@dimen/_30sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialogue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/filter_top_bg">
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:paddingLeft="@dimen/_20sdp"
+            android:text="Select Filter"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <ImageView
+            android:id="@+id/im_close"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/ic_white_close"
+            android:padding="@dimen/_5sdp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/filter_bottom_bg"
+        android:orientation="vertical">
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_filter_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Notes"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color">
+
+        </View>
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_filter_videos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+
+            android:padding="@dimen/_10sdp"
+            android:text="Videos"
+
+
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color">
+
+        </View>
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_filter_faqs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="FAQs"
+
+
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color">
+
+        </View>
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_filter_mcqs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="MCQs"
+
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color">
+
+        </View>
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_filter_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Quiz"
+
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color">
+
+        </View>
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_filter_discuss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Discussions"
+
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color">
+
+        </View>
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_filter_activty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Activity"
+
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color">
+
+        </View>
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_filter_my_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="My Activity"
+
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color">
+
+        </View>
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+            android:id="@+id/tv_filter_my_frds_act"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="My Friends Activity"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

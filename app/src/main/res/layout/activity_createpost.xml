@@ -1,0 +1,242 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_bottom"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/colorPrimary">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cancel"
+                            android:textColor="#ffff"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/white"></View>
+                    </LinearLayout>
+
+                    <com.iprismtech.studentvarsity.customviews.CustomTextViewMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:text="Create Post"
+                        android:textColor="#ffff"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="left" />
+
+                    <com.iprismtech.studentvarsity.customviews.CustomTextViewMedium
+                        android:id="@+id/tv_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.6"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Chinna Rama Krishna"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+
+                    <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                        android:id="@+id/tv_topicselect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        android:background="@drawable/white_draw_transparent"
+                        android:drawableRight="@drawable/ic_red_down_arrow_s"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableTint="@color/black"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Select Topic"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"></Spinner>
+
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_350sdp"
+                        android:layout_marginBottom="@dimen/_50sdp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <!--<com.iprismtech.studentvarsity.customviews.CustomEditTextNormal-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="start"-->
+                        <!--android:hint="Write a text here"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:background="@null"-->
+                        <!--android:textSize="@dimen/_12sdp" />-->
+
+
+                        <com.iprismtech.studentvarsity.customviews.CustomEditTextNormal
+                            android:id="@+id/et_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_200sdp"
+                            android:background="@null"
+                            android:gravity="start"
+                            android:hint="Write a text here"
+                            android:padding="10dp"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <com.iprismtech.studentvarsity.customviews.CustomEditTextNormal
+                            android:id="@+id/et_video_url"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+
+                            android:background="@null"
+                            android:hint=" Paste You Tube URL (Optional)"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tv_captured_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+
+
+            android:background="@drawable/background">
+
+            <ImageView
+                android:id="@+id/im_gallery"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_image" />
+
+            <ImageView
+                android:id="@+id/im_youlink"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/im_gallery"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_video" />
+
+
+            <RelativeLayout
+                android:id="@+id/ll_post"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/red_grad" />
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_sent_white" />
+            </RelativeLayout>
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_post"-->
+            <!--android:layout_width="@dimen/_60sdp"-->
+            <!--android:layout_height="@dimen/_50sdp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@drawable/send_corners"-->
+            <!--android:gravity="center">-->
+
+            <!---->
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

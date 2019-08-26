@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+            android:id="@+id/tv_freqAllquestion"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/faqs_selected"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_6sdp"
+            android:text="@string/FQ"
+            android:textColor="@color/white" />
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+            android:id="@+id/tv_freqCategeory"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/faqs_unselect"
+            android:gravity="center"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="Categories" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ll_nested_scroll_mcqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_freqAllquestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iv_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:scaleType="fitXY" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rview_mcqs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_freqCategeory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:groupIndicator="@null"
+            android:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout>
+

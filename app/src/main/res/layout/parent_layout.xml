@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_5sdp">
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+            android:id="@+id/parent_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:paddingVertical="@dimen/_3sdp"
+            android:text="Test"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:src="@drawable/ic_add" />
+    </LinearLayout>
+
+</LinearLayout>

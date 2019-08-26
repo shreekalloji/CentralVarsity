@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b80000</color>
+    <color name="colorPrimaryDark">#b80000</color>
+    <color name="colorAccent">#b80000</color>
+    <color name="primary_light">#ce1212</color>
+    <color name="black">#111111</color>
+    <color name="semi_light_black">#434242</color>
+    <color name="light_black">#797878</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#1e9e07</color>
+    <color name="view_color">#ccc</color>
+    <color name="light_grey">#f1eeee</color>
+    <color name="main_background">#f9f9f9</color>
+    <color name="transparent">#96f9f9f9</color>
+    <color name="navcolor">#433e3e</color>
+    <color name="DarkRed">#810C0C</color>
+    <color name="pink">#c55ad4</color>
+    <color name="dark_pink">#ff70e6</color>
+    <color name="blue_dark">#227cf7</color>
+    <color name="dark_red">#810C0C</color>
+    <color name="colorhintGrey">#CAC8C9</color>
+    <color name="thin_black">#6f6f6f</color>
+    <color name="df_transparent_black_background">#80000000</color>
+</resources>

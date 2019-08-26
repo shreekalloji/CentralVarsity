@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/custom_textview_bold"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:padding="@dimen/_8sdp"
+                android:text="Welcome to CentralVarcity"
+                android:textColor="@color/white" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/custom_textview_regular"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/lorem"
+                android:textColor="@color/white" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/suggestion_background">
+
+                <Spinner
+                    android:id="@+id/spinnerEducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@null"
+                    android:entries="@array/education"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/im_arrow"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:src="@drawable/ic_red_down_arrow" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/fab"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/_10sdp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/ic_arrow_right"
+        android:visibility="invisible"
+
+        />
+
+
+</RelativeLayout>

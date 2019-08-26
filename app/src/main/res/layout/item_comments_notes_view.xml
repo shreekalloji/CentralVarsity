@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tv_img"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/no_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                    android:id="@+id/tv_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:text="Gail Forcewind"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal" />
+
+                <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                    android:id="@+id/tv_uni_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Central Varsity"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="0.20"
+                android:gravity="top"
+                android:text="2 hrs ago"
+                android:textAlignment="center"
+                android:textSize="@dimen/_8sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewMedium
+            android:id="@+id/tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+        <!--<com.github.siyamed.shapeimageview.RoundedImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/iv_posted_img"-->
+        <!--app:siRadius="@dimen/_8sdp" />-->
+
+        <com.iprismtech.studentvarsity.utils.ResizableImageView
+            android:id="@+id/iv_posted_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:siRadius="@dimen/_8sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="start"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_comment_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <com.iprismtech.studentvarsity.customviews.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reply"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_black"></View>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.iprismtech.studentvarsity.customviews.CustomEditTextNormal
+            android:id="@+id/et_reply_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/comment_reply_bg"
+            android:hint="write here"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp" />
+
+        <com.iprismtech.studentvarsity.customviews.CustomTextViewMedium
+            android:id="@+id/tv_reply_comment_post"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="#a6a6a6"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:text="Post"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+        android:id="@+id/tv_replies_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:text="Replies:"
+        android:textColor="@color/blue_dark"
+        android:textSize="@dimen/_10sdp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rview_sub_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_60sdp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.iprismtech.studentvarsity.customviews.CustomTextViewBold
+        android:id="@+id/tv_all_replies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:gravity="end"
+        android:text="View all replies"
+        android:textColor="@color/blue_dark" />
+
+</LinearLayout>
